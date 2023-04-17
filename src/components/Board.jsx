@@ -4,9 +4,6 @@ import calculateWinner from "./Winner";
 
 
 export default function Board({ xIsNext, squares, onPlay }) {
-    // const [xIsNext, setXIsNext] = useState(true);
-    // const [squares, setSquares] = useState(Array(9).fill(null));
-
     function handleClick(i) {
         if (calculateWinner(squares) || squares[i]) {
             return;
@@ -18,8 +15,6 @@ export default function Board({ xIsNext, squares, onPlay }) {
             nextSquares[i] = "O";
         }
         onPlay(nextSquares);
-        // setSquares(nextSquares);
-        // setXIsNext(!xIsNext);
     }
 
     const winner = calculateWinner(squares);

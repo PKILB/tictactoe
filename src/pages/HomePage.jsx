@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Board from "../components/Board.jsx"
+import Game from "../components/Game.jsx";
 
 export default function HomePage() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,7 @@ export default function HomePage() {
           <div className="col-6">
             <div className="card">
               <div className="card-body">
-                <Board />
+                <Game />
               </div>
             </div>
           </div>

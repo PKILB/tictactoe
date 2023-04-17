@@ -7,8 +7,8 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <div className="container my-3">
-        <div className="row">
-          <div className="col-4">
+        <div className="row d-flex justify-content-center">
+          <div className="col-6">
             <div className="card">
               <div className="card-body">
                 <X />

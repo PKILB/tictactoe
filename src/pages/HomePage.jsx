@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import X from "../components/X.jsx"
 
 export default function HomePage() {
   const [count, setCount] = useState(0)
@@ -10,9 +11,7 @@ export default function HomePage() {
           <div className="col-4">
             <div className="card">
               <div className="card-body">
-                <button className="btn btn-success my-1" onClick={() => setCount((count) => count + 1)}>
-                  count is {count}
-                </button>
+                <X />
               </div>
             </div>
           </div>
@@ -21,3 +20,4 @@ export default function HomePage() {
     </div>
   )
 }
+// onClick={() => setCount((count) => count + 1)}
